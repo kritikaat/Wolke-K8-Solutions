@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#fff7ed" rx="10" ry="10"/>
+  
+  <!-- Alert bell -->
+  <path d="M100 40 C115 40, 130 55, 130 80 L130 110 L140 125 L60 125 L70 110 L70 80 C70 55, 85 40, 100 40" 
+        fill="#fdba74" stroke="#f97316" stroke-width="2"/>
+  <circle cx="100" cy="135" r="10" fill="#fdba74" stroke="#f97316" stroke-width="2"/>
+  <line x1="100" y1="30" x2="100" y2="40" stroke="#f97316" stroke-width="2"/>
+  
+  <!-- Alert waves -->
+  <path d="M75 70 C65 70, 55 75, 45 75" stroke="#f97316" stroke-width="2" fill="none" stroke-dasharray="3"/>
+  <path d="M125 70 C135 70, 145 75, 155 75" stroke="#f97316" stroke-width="2" fill="none" stroke-dasharray="3"/>
+  
+  <!-- Email notification -->
+  <rect x="50" y="150" width="40" height="30" fill="#fff" stroke="#f97316" stroke-width="2" rx="4" ry="4"/>
+  <path d="M50 155 L70 170 L90 155" stroke="#f97316" stroke-width="1" fill="none"/>
+  
+  <!-- Slack notification -->
+  <rect x="110" y="150" width="40" height="30" fill="#fff" stroke="#f97316" stroke-width="2" rx="4" ry="4"/>
+  <path d="M125 160 A5 5 0 0 1 125 170 A5 5 0 0 1 135 170 A5 5 0 0 1 135 160 Z" 
+        stroke="#f97316" stroke-width="1.5" fill="none"/>
+</svg>

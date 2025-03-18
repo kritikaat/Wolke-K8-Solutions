@@ -1,0 +1,22 @@
+{
+    "Features":[
+        {
+            "id": 1,
+            "title" : "Cost Allocation",
+            "description" : "Breakdown costs by any Kubernetes concepts, including deployment, service, namespace label, and more. View costs across multiple clusters in a single view or via a single API endpoint.",
+            "image": "https://cdn-icons-mp4.flaticon.com/512/10970/10970360.mp4"
+        },
+        {
+            "id": 2,
+            "title" : "Unified Cost Monitoring",
+            "description" : "Join Kubernetes costs with any external cloud services or infrastructure spend to have a complete picture. External costs can be shared and then attributed to any Kubernetes concept for a comprehensive view of spend.",
+            "image":"https://cdn-icons-mp4.flaticon.com/512/11095/11095504.mp4"
+        },
+        {
+            "id": 3,
+            "title" : "Optimization Insights",
+            "description" : "Receive dynamic recommendations for reducing spend without sacrificing performance. Prioritize key infrastructure or application changes for improving resource efficiency and reliability.",
+            "image":"https://cdn-icons-mp4.flaticon.com/512/14447/14447745.mp4"
+        }
+    ]
+}

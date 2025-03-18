@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#ecfdf5" rx="10" ry="10"/>
+  
+  <!-- Report document -->
+  <rect x="40" y="50" width="120" height="130" fill="#fff" stroke="#059669" stroke-width="2" rx="5" ry="5"/>
+  <line x1="60" y1="70" x2="140" y2="70" stroke="#059669" stroke-width="1"/>
+  <line x1="60" y1="80" x2="140" y2="80" stroke="#059669" stroke-width="1"/>
+  
+  <!-- Efficiency graph -->
+  <line x1="60" y1="140" x2="140" y2="140" stroke="#059669" stroke-width="2"/>
+  <line x1="60" y1="100" x2="60" y2="140" stroke="#059669" stroke-width="2"/>
+  
+  <!-- Graph data line -->
+  <path d="M60 130 L80 125 L100 115 L120 105 L140 90" stroke="#10b981" stroke-width="3" fill="none"/>
+  <circle cx="80" cy="125" r="3" fill="#10b981"/>
+  <circle cx="100" cy="115" r="3" fill="#10b981"/>
+  <circle cx="120" cy="105" r="3" fill="#10b981"/>
+  <circle cx="140" cy="90" r="3" fill="#10b981"/>
+  
+  <!-- Recurring icon -->
+  <circle cx="150" cy="40" r="15" fill="#fff" stroke="#059669" stroke-width="2"/>
+  <path d="M145 40 A10 10 0 0 1 155 30 M155 32 L155 28 L151 28 M155 40 A10 10 0 0 1 145 50 M145 48 L145 52 L149 52" 
+        stroke="#059669" stroke-width="2" fill="none"/>
+        
+  <!-- Namespaces -->
+  <rect x="60" y="150" width="25" height="10" fill="#a7f3d0" rx="2" ry="2"/>
+  <rect x="90" y="150" width="25" height="10" fill="#6ee7b7" rx="2" ry="2"/>
+  <rect x="120" y="150" width="25" height="10" fill="#34d399" rx="2" ry="2"/>
+</svg>

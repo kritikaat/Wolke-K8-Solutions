@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0fff4" rx="10" ry="10"/>
+  
+  <!-- Pie chart -->
+  <circle cx="100" cy="100" r="60" fill="#fff" stroke="#333" stroke-width="1"/>
+  <path d="M100 100 L100 40 A60 60 0 0 1 154 130 Z" fill="#10b981"/>
+  <path d="M100 100 L154 130 A60 60 0 0 1 70 150 Z" fill="#3b82f6"/>
+  <path d="M100 100 L70 150 A60 60 0 0 1 40 70 Z" fill="#6366f1"/>
+  <path d="M100 100 L40 70 A60 60 0 0 1 100 40 Z" fill="#f59e0b"/>
+  
+  <!-- Dollar sign -->
+  <circle cx="100" cy="100" r="25" fill="white"/>
+  <path d="M100 85 L100 115 M95 90 C95 85, 105 85, 105 93 C105 100, 95 100, 95 108 C95 115, 105 115, 105 110" 
+        stroke="#333" stroke-width="3" fill="none"/>
+        
+  <!-- Magnifying glass -->
+  <circle cx="150" cy="50" r="15" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="160" y1="60" x2="170" y2="70" stroke="#333" stroke-width="3"/>
+</svg>

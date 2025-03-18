@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0f5ff" rx="10" ry="10"/>
+  
+  <!-- Containers scaling up -->
+  <rect x="30" y="140" width="30" height="30" fill="#4f46e5" rx="4" ry="4"/>
+  <rect x="70" y="120" width="30" height="50" fill="#6366f1" rx="4" ry="4"/>
+  <rect x="110" y="100" width="30" height="70" fill="#818cf8" rx="4" ry="4"/>
+  <rect x="150" y="80" width="30" height="90" fill="#a5b4fc" rx="4" ry="4"/>
+  
+  <!-- Scaling arrows -->
+  <path d="M45 90 L45 130" stroke="#4f46e5" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M85 90 L85 110" stroke="#6366f1" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M125 90 L125 90" stroke="#818cf8" stroke-width="2" stroke-dasharray="4"/>
+  <path d="M165 90 L165 70" stroke="#a5b4fc" stroke-width="2" stroke-dasharray="4"/>
+  
+  <!-- Graph line -->
+  <path d="M30 90 C 60 90, 70 50, 100 50 S 140 30, 170 30" stroke="#4f46e5" stroke-width="3" fill="none"/>
+  
+  <!-- Auto-scaling icon -->
+  <circle cx="100" cy="35" r="15" fill="#fff" stroke="#4f46e5" stroke-width="2"/>
+  <path d="M93 35 L107 35 M100 28 L100 42" stroke="#4f46e5" stroke-width="2"/>
+</svg>

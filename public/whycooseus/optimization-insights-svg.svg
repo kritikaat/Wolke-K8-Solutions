@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#fff0f6" rx="10" ry="10"/>
+  
+  <!-- Balance scale -->
+  <line x1="100" y1="60" x2="100" y2="100" stroke="#db2777" stroke-width="3"/>
+  <line x1="60" y1="100" x2="140" y2="100" stroke="#db2777" stroke-width="3"/>
+  
+  <!-- Left scale - Cost -->
+  <polygon points="60,100 50,130 70,130" fill="#fbcfe8" stroke="#db2777" stroke-width="2"/>
+  <text x="55" y="150" font-family="Arial" font-size="10" fill="#db2777">Cost</text>
+  
+  <!-- Right scale - Performance -->
+  <polygon points="140,100 130,110 150,110" fill="#fbcfe8" stroke="#db2777" stroke-width="2"/>
+  <text x="120" y="130" font-family="Arial" font-size="10" fill="#db2777">Performance</text>
+  
+  <!-- Optimization curve -->
+  <path d="M40 160 C60 130, 80 120, 100 120 S140 130, 160 120" stroke="#db2777" stroke-width="3" fill="none"/>
+  
+  <!-- Optimization point -->
+  <circle cx="100" cy="120" r="8" fill="#fff" stroke="#db2777" stroke-width="2"/>
+  <circle cx="100" cy="120" r="4" fill="#db2777"/>
+  
+  <!-- Gear icon -->
+  <circle cx="100" cy="40" r="15" fill="#fff" stroke="#db2777" stroke-width="2"/>
+  <path d="M100 25 L100 30 M107 27 L105 32 M113 33 L109 36 M114 40 L109 42 M113 47 L109 44 M107 53 L105 48 M100 55 L100 50 M93 53 L95 48 M87 47 L91 44 M86 40 L91 38 M87 33 L91 36 M93 27 L95 32" 
+        stroke="#db2777" stroke-width="1.5"/>
+</svg>

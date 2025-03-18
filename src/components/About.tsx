@@ -1,11 +1,8 @@
 "use client";
 
-import { useState, useRef, FormEvent } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {useRef} from "react";
 import dynamic from 'next/dynamic';
 
-// Import components
-import GlossyCard from './ui/GlossyCard';
 import AnimatedSection from './ui/AnimatedSection';
 import TrustedBySection from './sections/TrustedBySection';
 import OurJourneySection from './sections/OurJourneySection';
@@ -14,7 +11,6 @@ import WhatWeDoSection from './sections/WhatWeDoSection';
 import OurCommitmentSection from './sections/OurCommitmentSection';
 import NewsletterSection from './sections/NewsletterSection';
 import CallToActionSection from './sections/CallToActionSection';
-import Footer from './Footer';
 
 // Import styles
 import "swiper/css";
@@ -28,7 +24,6 @@ const AnimatedParticles = dynamic(() => import('./ui/AnimatedParticles'), {
 
 const CompanyTimeline = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
   
   return (
     <div className="py-24 relative overflow-hidden" ref={containerRef}>

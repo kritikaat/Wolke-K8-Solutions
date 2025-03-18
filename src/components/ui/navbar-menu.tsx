@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const transition = {

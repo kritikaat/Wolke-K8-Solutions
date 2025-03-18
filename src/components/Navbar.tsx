@@ -12,7 +12,7 @@ function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
-    const [currentSection, setCurrentSection] = useState<string | null>(null);
+    const [_currentSection, setCurrentSection] = useState<string | null>(null);
     const router = useRouter();
     const pathname = usePathname();
     
@@ -52,7 +52,7 @@ function Navbar({ className }: { className?: string }) {
                 threshold: 0.1 // Trigger when 10% of the element is visible
             };
             
-            
+            //@ts-ignore
             const observerCallback = (entries: any[]) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {

@@ -152,7 +152,10 @@ export function SparkleWrapper({ children }: { children: React.ReactNode }) {
     return (
       <div className="relative flex flex-col space-y-4 p-4 rounded-lg overflow-hidden bg-black text-white">
         {/* Background with Collision Effect */}
-        <BackgroundBeamsWithCollision className="absolute inset-0 z-0" children  />
+        <BackgroundBeamsWithCollision className="absolute inset-0 z-0">
+  {children}
+</BackgroundBeamsWithCollision>
+
   
         {/* Animated Wrapper */}
         <motion.div

@@ -52,7 +52,7 @@ function Navbar({ className }: { className?: string }) {
                 threshold: 0.1 // Trigger when 10% of the element is visible
             };
             
-            //@ts-ignore
+   
             const observerCallback = (entries: any[]) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {

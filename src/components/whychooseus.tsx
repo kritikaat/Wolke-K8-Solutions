@@ -85,7 +85,7 @@ const features = [
 
 function Whychooseus() {
   return (
-    <section className="py-20 w-full bg-gradient-to-b from-slate-900 to-black relative flex flex-col items-center justify-center overflow-hidden">
+    <section className="py-12 md:py-20 w-full bg-gradient-to-b from-slate-900 to-black relative flex flex-col items-center justify-center overflow-hidden">
       {/* Cloud Background Elements */}
       <div className="absolute inset-0 w-full h-full overflow-hidden opacity-20">
       </div>
@@ -93,36 +93,36 @@ function Whychooseus() {
       {/* Animated Grid Background */}
       <div className="absolute inset-0 w-full h-full dark:bg-grid-white/[0.05] z-0"></div>
       
-      {/* Cloud Elements */}
-      <div className="absolute top-20 left-20 opacity-20 animate-float-slow">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      {/* Cloud Elements - Responsive positioning */}
+      <div className="absolute top-10 md:top-20 left-6 md:left-20 opacity-20 animate-float-slow hidden sm:block">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 md:h-16 md:w-16 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
         </svg>
       </div>
-      <div className="absolute bottom-40 right-20 opacity-10 animate-float-medium">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="absolute bottom-20 md:bottom-40 right-6 md:right-20 opacity-10 animate-float-medium hidden sm:block">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 md:h-14 md:w-14 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
         </svg>
       </div>
-      <div className="absolute top-40 right-1/3 opacity-15 animate-float-fast">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="absolute top-20 md:top-40 right-1/4 md:right-1/3 opacity-15 animate-float-fast hidden sm:block">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 md:h-12 md:w-12 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
         </svg>
       </div>
       
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 z-10 text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4 z-10 text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-300">
             Why Choose Us?
           </h2>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-300 text-base md:text-lg max-w-sm md:max-w-2xl mx-auto px-4 md:px-0">
             Our platform provides comprehensive cloud cost management tools to optimize your infrastructure spending with intelligent automation.
           </p>
         </div>
         
-        {/* Data Flow Line */}
-        <div className="">
+        {/* Data Flow Line - Hide on mobile */}
+        <div className="hidden md:block">
           <div className="h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500 relative">
             {[1, 2, 3, 4, 5].map((i) => (
               <div 
@@ -136,8 +136,26 @@ function Whychooseus() {
           </div>
         </div>
         
+        {/* Feature cards with responsive adjustments */}
         <div className="w-full overflow-hidden relative">
-          <InfiniteMovingCards items={features} direction="right" speed="slow" />
+          <div className="hidden md:block">
+            <InfiniteMovingCards items={features} direction="right" speed="slow" />
+          </div>
+          
+          {/* Mobile-friendly static cards */}
+          <div className="md:hidden">
+            <div className="grid grid-cols-1 gap-6 py-6">
+              {features.map((feature, index) => (
+                <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700/50">
+                  <div className={`flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-gradient-to-r ${feature.color}`}>
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+                  <p className="text-slate-300 text-sm">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

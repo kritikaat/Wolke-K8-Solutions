@@ -66,7 +66,7 @@ To learn more about the technologies used, check out:
 * [Next.js Documentation](https://nextjs.org/docs) – learn about Next.js features and API
 * [Learn Next.js](https://nextjs.org/learn) – interactive Next.js tutorial
 * [Next.js GitHub Repository](https://github.com/vercel/next.js) – share feedback and contributions
-* [Accertinity UI Documentation](#) – explore the component library used 
+* [Accertinity UI](https://ui.aceternity.com/) – explore the component library used 
 
 ## Deployment
 
